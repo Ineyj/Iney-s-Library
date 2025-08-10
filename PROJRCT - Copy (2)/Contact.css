@@ -1,0 +1,180 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+   font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+ background-color: #043b4a;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+} 
+
+h1 {
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #1abc9c;
+}
+/* Container and Row */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.col-md-6, .col-lg-3 {
+  flex: 1 1 100%;
+  padding: 10px;
+}
+
+@media (min-width: 68px) {
+.col-md-6{
+    flex: 3 3
+     40%;
+  }
+
+  .col-lg-3 {
+    flex: 1 1 25%;
+  }
+}
+
+/* Contact Section */
+.contact_section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+form input,
+form .message-box {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  background-color:  #f2f2f2;
+}
+
+.message-box {
+  height: 100px;
+}
+
+.btn-box button {
+  padding: 12px 25px;
+  background-color: #043b4a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-box button:hover {
+  background-color:#1abc9c;
+}
+
+/* Image Box */
+.img-box img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Info Section */
+.info_section {
+  background-color: #f4f4f4;
+  margin-top: 40px;
+  padding: 40px 15px;
+}
+
+.info_detail h2,
+.info_contact h3,
+.info_contact h4 {
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.info_detail p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.info_social a {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.info_social a:hover {
+  color: #1abc9c;
+}
+
+.contact_link_box a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.contact_link_box i {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  color: #1abc9c;
+}
+
+/* Newsletter Form */
+.info_contact form input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.info_contact form button {
+  padding: 10px 15px;
+  background-color: #043b4a;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info_contact form button:hover {
+  background-color: #1abc9c;
+}
+
+/* Footer */
+.footer_section {
+  background-color:#043b4a;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}

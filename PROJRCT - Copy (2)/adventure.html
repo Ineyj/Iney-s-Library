@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adventure Books - Iney's Library</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="adventure.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <h1>Iney's Library</h1>
+    <nav>
+      <a href="projrct.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="categories.html">Categories</a>
+      <a href="blog.html">Blog</a>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+      <h2>Adventure Books Collection</h2>
+      <p>Embark on thrilling journeys through the pages of our adventure books</p>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search adventure books...">
+        <button onclick="searchBooks()"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="filters">
+        <button class="filter-btn active" onclick="filterBooks('all')">All Books</button>
+        <button class="filter-btn" onclick="filterBooks('action')">Action</button>
+        <button class="filter-btn" onclick="filterBooks('fantasy')">Fantasy</button>
+        <button class="filter-btn" onclick="filterBooks('mystery')">Mystery</button>
+        <button class="filter-btn" onclick="filterBooks('survival')">Survival</button>
+      </div>
+
+      <div id="books-container" class="books-grid">
+        <!-- Books will be dynamically loaded here -->
+      </div>
+
+      <div id="book-details-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="modal-book-content">
+            <!-- Book details will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_detail">
+            <h2>About Us</h2>
+            <p>We are an indie library committed to provide all readers in Ghana with the best books at the most affordable prices.</p>
+            <div class="info_social">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h3>Address</h3>
+            <div class="contact_link_box">
+              <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i><span>East Legon</span></a>
+              <a href=""><i class="fa fa-phone" aria-hidden="true"></i><span>Call +233 561176879</span></a>
+              <a href=""><i class="fa fa-envelope" aria-hidden="true"></i><span>ineyslibrary@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h4>Newsletter</h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section">
+    <div class="container">
+      <p>2025 Iney's Library</p>
+    </div>
+  </footer>
+
+  <script src="adventure.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - User Database</title>
+  <link rel="stylesheet" href="login.css" />
+  <style>
+    .user-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    .user-table th, .user-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    .user-table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    .user-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .admin-controls {
+      margin: 20px 0;
+    }
+    .admin-controls button {
+      margin: 5px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .admin-controls button:hover {
+      background-color: #0056b3;
+    }
+    .admin-controls button.danger {
+      background-color: #dc3545;
+    }
+    .admin-controls button.danger:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <button class="back-button" onclick="window.location.href='login.html'">&larr;</button>
+      <h2>Admin Panel</h2>
+      <p>User Database Management</p>
+
+      <div class="admin-controls">
+        <button onclick="refreshUsers()">Refresh Users</button>
+        <button onclick="exportUsers()">Export Users</button>
+        <button onclick="clearDatabase()" class="danger">Clear Database</button>
+        <button onclick="resetToDefault()">Reset to Default</button>
+      </div>
+
+      <div id="userCount"></div>
+      <div id="userTable"></div>
+
+      <p class="account-link">
+        <a href="login.html">Back to Login</a> | 
+        <a href="signup.html">Go to Signup</a>
+      </p>
+    </div>
+    <script src="admin.js"></script>
+
+    <div class="image-section">
+      <img src="book s.avif" alt="Bookshelf" />
+    </div>
+  </div>
+</body>
+</html>
